@@ -18,9 +18,10 @@ for i in range(0,10,3):
 	
 x=["raghu",["padma","bhuvan","ruthu"],"autodesk","singapore"]
 for i in range(len(x)):
-	"""if len(i) > 1:
+	if isinstance(x[i],list):
 		for t in range(len(x[i])):
-			print("printing inner index")
-			print(t,x[i,t])"""
-	#if:
-	print(i,x[i]+" with length "+len(x[i]))
+			print(len(x[i])
+			# print("printing inner index")
+			# print(t,x[i,t],len(x[i,t]))
+	else:
+		print(i,x[i],len(x[i]))
